@@ -21,8 +21,8 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <nav className="container navbar navbar-expand-lg navbar-light justify-content-between">
-                    <a className="navbar-brand" href="#">Egitim Budur</a>
+                <nav className="container navbar navbar-expand-lg  justify-content-between">
+                    <a className="navbar-brand" href="/">LİDER YAZILIM</a>
                     <button className="navbar-toggler" type="button" onClick={this.btnClick.bind(this)}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -36,7 +36,7 @@ class Header extends Component {
                                 <Link to="/hakkimizda" activeClassName="active" className="nav-link" href="">Hakımızda</Link>
                             </li>
                             <li className="nav-item ">
-                                <Link to="/iletisim" activeClassName="active" className="nav-link" href="">İletişim</Link>
+                                <Link to="/iletisim" activeClassName="active" className="nav-link" href="">İletİşİm</Link>
                             </li>
 
                         </ul>

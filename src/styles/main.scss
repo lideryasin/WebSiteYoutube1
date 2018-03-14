@@ -1,8 +1,14 @@
 @import 'base';
 @import '~bootstrap/scss/bootstrap.scss';
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext');
 // Some best-practice CSS that's useful for most apps
 // Just remove them if they're not what you want
+
+$primary-color: #86BC42;
+$text-color:#49575F;
+$font-family: 'Lato', sans-serif;
+
 html {
   box-sizing: border-box;
 }
@@ -12,10 +18,112 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: $font-family !important;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+header{
+  background-color: #fff;
+  box-shadow: 3px 0 8px rgba(0,0,0,3);
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand{
+  color: $primary-color !important;
+  font-family: $font-family;
+}
+  
+.nav-link{
+  color: $text-color !important;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+  
+.nav-link:hover{
+      color: $primary-color !important
+      
+  }
+.active{
+  font-weight: bold;
+  color: $primary-color !important;
+}
+
+.navbar-collapse{
+  flex-basis: 100%;
+  @media (min-width: 992px){
+    flex-basis: auto;
+  }
+  
+}
+.navbar-toggler-icon{
+  color: #fff !important
+}
+
+.navbar-light .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") 
+}
+
+.page-layout__viewport {
+  padding-top: 4rem;
+}
+
+.page-layout__nav-item--active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.home-container{
+  background-image: url('images/home.jpg');
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  padding-top: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+form{
+  width: 516px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+h1{
+  text-align: center;
+  color: $text-color;
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 160px;
+  line-height: 2.3 !important
+}
+.btn-primary{
+  background-color: $primary-color
+}
+.btn-primary:hover{
+  background-color: #242C42;
+  cursor: pointer
+}
+
+a{
+  color: $primary-color;
+}
+a:hover{
+ color: $primary-color;
+}
+
+p{
+  text-align: center;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: $text-color;
 }
